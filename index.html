@@ -8,9 +8,7 @@
 <link rel="icon" href="./images/berkeley_logo.ico">
 <link rel="stylesheet" href="main.css" type="text/css" />
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-<!--- <title></title> --->
 <title>Shangding Gu</title>
-<!-- MathJax -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
 </script>
 <script type="text/x-mathjax-config">
@@ -18,63 +16,37 @@ MathJax.Hub.Config({
 	  TeX: { equationNumbers: { autoNumber: "AMS" } }
 });
 </script>
-<!-- End MathJax -->
-<style>
-        #header-container {
-            background-color: #f5f5f5; /* Replace #f5f5f5 with your logo's background color */
+<style>        #header-container {
+            background-color: #f5f5f5;
         }
-        /* 让 logo-container 变成一个居中的容器 */
-        /*.paper-tag {
-            background-color: purple;
-            color: white;
-            padding: 5px 10px;
-            font-weight: bold;
-            border-radius: 5px;
-            margin-right: 10px;
-        }*/
-
         .paper-tag {
-/*  background-color: purple; */
-background-color: #bd1eb4; 
+background-color: #bd1eb4;
   color: #fff;
   padding: 4px 8px;
   border-radius: 4px;
   font-weight: bold;
   font-size: 13px;
-
-  /* 关键：使用 Flex + 垂直排列，让换行后每行居中 */
   display: inline-flex;
   flex-direction: column;
-  align-items: center;      /* 水平居中 */
-  justify-content: center;  /* 垂直居中（若有固定高度时） */
-  text-align: center;       /* 多行文本也居中 */
-  line-height: 1.2;         /* 控制行距让换行更紧凑 */
-
-  /* 如需限制宽度并自动换行，可加这两行 */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.2;
   max-width: 90px;
   word-wrap: break-word;
-}
-
-
-    </style>
+}</style>
 </head>
 <body>
 <div id="main-container">
 <div id="header-container">
 <div id="header">
 <div id="header-icon-text-container">
-    <!-- <a href="index.html"><img src="./images/ucb_eecs_logo.jpeg" alt=""></a> -->
-<div id="header-icon-container" >
+    <div id="header-icon-container" >
     <a href="https://eecs.berkeley.edu/"><img src="./images/ucb_eecs_logo.svg" alt="" style="width: 100%; height: 100%; position: center; padding:0px; margin: 0px;"></a>
-<!-- <a href="index.html"><img src="./images/ucb_eecs_logo.jpeg" alt="" style="width: 100%; height: 100%; position: center; padding:0px; margin: 0px;"></a> -->
 </div>
 <div id="header-text-container">
 <a href="index.html">Shangding Gu</a>
 </div>
-<!-- <div id="logo-container">
-        <img src="./images/ucb_eecs_logo.svg" alt="My Logo" id="my-logo">
-</div> -->
-
 </div>
 <div id="main">
 <button class="openbtn" onclick="openNav()">☰</button>
@@ -85,16 +57,7 @@ background-color: #bd1eb4;
 <div id="layout-menu-container">
 <div id="layout-menu">
 <div class="menu-item"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></div>
-<!-- <div class="menu-item"><a href="index.html">Content</a></div> -->
-<!-- <div class="menu-category">My Templates</div>
-<div class="menu-item"><a href="profile.html" class="current">Profile&nbsp;Page</a></div>
-<div class="menu-item"><a href="post1.html">Blog&nbsp;Post&nbsp;Page</a></div>
-<div class="menu-item"><a href="projects.html">Project&nbsp;Page</a></div>
-<div class="menu-item"><a href="group.html">Group&nbsp;Page</a></div> -->
-
-<!-- <div class="menu-item">Content</div> -->
 <div class="menu-category">Content</div>
-<!-- <div class="menu-category">Content</div> -->
 <div class="menu-item"><a href="index.html" class="current">Home&nbsp;</a></div>
 <div class="menu-item"><a href="publication.html">Publications&nbsp;&nbsp;</a></div>
 <div class="menu-item"><a href="projects.html">Projects&nbsp;</a></div>
@@ -102,96 +65,42 @@ background-color: #bd1eb4;
 <div class="menu-item"><a href="group.html">Group&nbsp;</a></div>
 <div class="menu-item"><a href="tutorial_talk.html">Tutorials &&nbsp;Talks</a></div>
 <div class="menu-item"><a href="academic_service.html">Academic&nbsp;Service</a></div>
-<!-- <div class="menu-item"><a href="projects.html">Miscellaneous&nbsp;</a></div> -->
-
-</div> <!-- <div id="layout-menu"> -->
-</div> <!-- <div id="layout-menu-container"> -->
+</div>
+</div>
 <div id="layout-content-container">
 <div id="layout-content">
 <div id="text-img-container"><div id="img-container">
-<!-- <img src="./images/banner2.png" alt="profile pic" width="100%" /></div> -->
-
-<div id="text-container"></div></div> 
-
-
-<!-- <img src="./images/shangding.jpg" alt="profile pic" width="125px" height="150px" /></div>
-<h3 style=" text-align: justify; ">My name is Shangding Gu, now I am a postdoctoral researcher in the <a href="https://eecs.berkeley.edu/"> Department of EECS </a> at UC Berkeley. I am extremely fortunate to have the opportunity to work with <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/spanos.html">Prof. Costas Spanos</a> and closely collaborate with <a href="https://dawnsong.io/">Prof. Dawn Song</a>. I did a research internship at <a href="https://www.microsoft.com/en-us/research/">Microsoft</a> from April 2023 to August 2023.  In 2024, I earned my Ph.D. in Computer Science from <a href="https://www.tum.de/en/">Technical University of Munich</a> under the supervision of <a href="https://www.ce.cit.tum.de/en/air/people/prof-dr-ing-habil-alois-knoll/">Prof. Alois Knoll</a>. I have received multiple grants and scholarships to support my research, including from Nvidia, OpenAI, and Bosch.
- <br />
-</h3>   -->
-
-
+<div id="text-container"></div></div>
 <div id="text-img-container"><div id="img-container">
- <!-- <img src="./images/shangding_2026.png" alt="profile pic" width="156px" height="160px" style="margin-right: 15px; margin-bottom: 45px;" /></div> -->
-   <!-- <img src="./images/shangding_2026_03.png" alt="profile pic" width="156px" height="160px" style="margin-right: 15px; margin-bottom: 45px;" /></div> -->
-    <img src="./images/shangding_2026_05.png" alt="profile pic" width="156px" height="160px" style="margin-right: 15px; margin-bottom: 50px;" /></div>
- <!-- <h3 style="text-align: justify; margin-top: -4px;">
-        My name is Shangding Gu, and I am a postdoctoral researcher in the 
-        <a href="https://eecs.berkeley.edu/">Department of EECS</a> at UC Berkeley. 
-        I am fortunate to have the opportunity to work with 
-        <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/spanos.html">Prof. Costas Spanos</a> and   
-        <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/song.html">Prof. Dawn Song</a>. 
-         I did a research internship at 
-        <a href="https://www.microsoft.com/en-us/research/">Microsoft</a> from April 2023 to August 2023. 
-        In 2024, I earned my <a href="./papers/PhD_Dissertation_Shangding_Gu_2024.pdf" target="_blank">Ph.D.</a>  in Computer Science from 
-        <a href="https://www.tum.de/en/">Technical University of Munich</a> under the supervision of 
-        <a href="https://www.ce.cit.tum.de/en/air/people/prof-dr-ing-habil-alois-knoll/">Prof. Alois Knoll</a>.
-        I have received multiple grants and scholarships to support my research, including from Nvidia, OpenAI, and Bosch.
-    </h3> -->
-    <h3 style="text-align: justify; margin-top: -4px;">
-        My name is Shangding Gu, and I am a postdoctoral researcher in the 
-        <a href="https://eecs.berkeley.edu/">Department of EECS</a> at UC Berkeley. 
-        I am fortunate to have the opportunity to work with 
-        <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/spanos.html">Prof. Costas Spanos</a> and <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/song.html">Prof. Dawn Song</a>, and I also work closely with  
-        <a href="http://www0.cs.ucl.ac.uk/staff/jun.wang/">Prof. Jun Wang</a> and <a href="http://www.jinming.tech/">Prof. Ming Jin</a>. I did a research internship at 
-        <a href="https://www.microsoft.com/en-us/research/">Microsoft</a> from April 2023 to August 2023. 
-        In 2024, I earned my <a href="./papers/PhD_Dissertation_Shangding_Gu_2024.pdf" target="_blank">Ph.D.</a> in Computer Science from 
-        <a href="https://www.tum.de/en/">Technical University of Munich</a> under the supervision of 
-        <a href="https://www.ce.cit.tum.de/en/air/people/prof-dr-ing-habil-alois-knoll/">Prof. Alois Knoll</a>, where I also had the opportunity to collaborate with <a href="http://www0.cs.ucl.ac.uk/staff/jun.wang/">Prof. Jun Wang</a> and <a href="https://www.ias.informatik.tu-darmstadt.de/Member/JanPeters">Prof. Jan Peters</a>. 
+        <img src="./images/shangding_2026_05.png" alt="profile pic" width="156px" height="160px" style="margin-right: 15px; margin-bottom: 50px;" /></div>
+     <h3 style="text-align: justify; margin-top: -4px;">
+        My name is Shangding Gu, and I am a postdoctoral researcher in the
+        <a href="https://eecs.berkeley.edu/">Department of EECS</a> at UC Berkeley.
+        I am fortunate to have the opportunity to work with
+        <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/spanos.html">Prof. Costas Spanos</a> and <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/song.html">Prof. Dawn Song</a>, and I also work closely with
+        <a href="http://www0.cs.ucl.ac.uk/staff/jun.wang/">Prof. Jun Wang</a> and <a href="http://www.jinming.tech/">Prof. Ming Jin</a>. I did a research internship at
+        <a href="https://www.microsoft.com/en-us/research/">Microsoft</a> from April 2023 to August 2023.
+        In 2024, I earned my <a href="./papers/PhD_Dissertation_Shangding_Gu_2024.pdf" target="_blank">Ph.D.</a> in Computer Science from
+        <a href="https://www.tum.de/en/">Technical University of Munich</a> under the supervision of
+        <a href="https://www.ce.cit.tum.de/en/air/people/prof-dr-ing-habil-alois-knoll/">Prof. Alois Knoll</a>, where I also had the opportunity to collaborate with <a href="http://www0.cs.ucl.ac.uk/staff/jun.wang/">Prof. Jun Wang</a> and <a href="https://www.ias.informatik.tu-darmstadt.de/Member/JanPeters">Prof. Jan Peters</a>.
         I have received multiple grants and scholarships to support my research, including from Nvidia, OpenAI, and Bosch.
     </h3>
-
-
-<!-- <div style="display: flex; align-items: center;">
-    <img src="./images/shangding.jpg" alt="profile pic" width="125px" height="150px" style="margin-right: 15px;" />
-    <h3 style="text-align: justify;">
-        My name is Shangding Gu, and I am a postdoctoral researcher in the 
-        <a href="https://eecs.berkeley.edu/">Department of EECS</a> at UC Berkeley. 
-        I am extremely fortunate to have the opportunity to work with 
-        <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/spanos.html">Prof. Costas Spanos</a> 
-        and closely collaborate with 
-        <a href="https://dawnsong.io/">Prof. Dawn Song</a>. I did a research internship at 
-        <a href="https://www.microsoft.com/en-us/research/">Microsoft</a> from April 2023 to August 2023. 
-        In 2024, I earned my Ph.D. in Computer Science from 
-        <a href="https://www.tum.de/en/">Technical University of Munich</a> under the supervision of 
-        <a href="https://www.ce.cit.tum.de/en/air/people/prof-dr-ing-habil-alois-knoll/">Prof. Alois Knoll</a>. 
-        I have received multiple grants and scholarships to support my research, including from Nvidia, OpenAI, and Bosch.
-    </h3>
-</div> -->
-
-
-
-
-
-
-
 <h4>
     <img src="images/location-dot-solid.svg" height="18px" class="icon"> 406 Cory Hall, Berkeley, CA 94720
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <img src="images/envelope-solid.svg" height="18px" class="icon"> shangding.gu@berkeley.edu
 </h4>
-
 <h4>
     <img src="images/graduation-cap-solid.svg" height="18px" class="icon">
     <a href="https://scholar.google.com/citations?hl=en&user=E1GCDXUAAAAJ&view_op=list_works&sortby=pubdate&amp;hl=en" target="_blank">Google Scholar</a>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <img src="images/logo_twitter.svg.png" height="18px" class="icon">
-    <a href="https://x.com/ShangdingG95714" target="_blank">Twitter</a>    
+    <a href="https://x.com/ShangdingG95714" target="_blank">Twitter</a>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <img src="images/youtube.svg" height="18px" class="icon">
     <a href="https://agentic-ai-frontier-seminar.github.io/" target="_blank">Agentic AI Frontier Seminar</a>
 </h4>
-
-<h4>    
+<h4>
     <img src="images/personal-github.svg" height="16px" class="icon">
     <a href="https://github.com/chauncygu" target="_blank">Personal Github</a>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -199,151 +108,78 @@ background-color: #bd1eb4;
     <a href="https://github.com/SafeRL-Lab" target="_blank">SAIL Lab Github</a>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <img src="images/youtube.svg" height="18px" class="icon">
-    <a href="https://www.youtube.com/channel/UCo_QY2SB3-ZUdyAWJRHSdcg">AI Agent Research YouTube Channel</a>   
+    <a href="https://www.youtube.com/channel/UCo_QY2SB3-ZUdyAWJRHSdcg">AI Agent Research YouTube Channel</a>
 </h4>
-
-<!-- <h4>
-    <a href="https://agentic-ai-frontier-seminar.github.io/" target="_blank">Agentic AI Frontier Seminar</a>
-</h4> -->
-
-
 <h2>Research Interests</h2>
-<!-- <p>My current research focuses on reinforcement learning, planning, and AI safety, with applications in foundation models (e.g., large language models and multi-modal models), robotics, and semiconductor manufacturing. My goal is to design safe, reliable, and efficient systems that address pressing real-world challenges and drive impactful applications across diverse domains. My work has been featured in leading publications, including top-tier journals and conferences such as the Journal of Artificial Intelligence, IEEE Transactions on Pattern Analysis and Machine Intelligence, NeurIPS, and other prestigious venues. See Safe RL YouTube Channel. I support slow science. I am a student of mind, nature, and cosmos. If you are interested in my research topics, please feel free to contact me indicating your background and skills. Outside of research, I enjoy playing the guitar, reading, running, swimming and playing badminton with friends. <a href="
-
-https://pilawa-group.berkeley.edu/
-
-" target=&ldquo;blank&rdquo;>the Pilawa Research Group</a> and <a href="
-
-https://bpec.berkeley.edu/
-
-" target=&ldquo;blank&rdquo;>the Berkeley Power and Energy Center (BPEC)</a> at UC Berkeley, I received my B.Eng. and M.S. degrees in electrical engineering from Tsinghua University in 2017 and 2020, respectively, where I worked on the discrete state event-driven (DSED) simulation of power electronic systems and active gate drivers for SiC MOSFETs. Please see my <a href="
-
-[research.html](https://people.eecs.berkeley.edu/~yczhu/research.html)
-
-" target=&ldquo;blank&rdquo;>research</a> and <a href="
-
-[publications.html](https://people.eecs.berkeley.edu/~yczhu/publications.html)
-
-" target=&ldquo;blank&rdquo;>publications</a> for more information.</p> -->
-
 <p style="font-size: 19px;">My current research focuses on reinforcement learning, planning, and AI safety, with applications in foundation models (e.g., large language models and multimodal models), robotics, and semiconductor manufacturing.  My goal is to design <span style="font-weight: bold; display: inline;"> safe, reliable, and efficient systems that address pressing real-world challenges and drive impactful applications across diverse domains</span>. My work has been featured in leading publications, including top-tier journals and conferences such as the Journal of Artificial Intelligence, IEEE Transactions on Pattern Analysis and Machine Intelligence, NeurIPS, and other prestigious venues. Outside of research, I enjoy playing guitar, reading, running, hiking, swimming, and playing badminton with friends.</p>
-
-<!-- <span style="font-size: 19px; text-align: justify; "><font color="#bd1eb4">I am on the 2025-2026 job market looking for full-time academia and industry positions. Please feel free to reach out.</font></span> -->
 <p style="font-size: 19px;">I am a <b>lead guest editor</b> for <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8856">IEEE Transactions on Automation Science and Engineering</a>, for the Special Issue on <em>Trustworthy AI for Automation Control of Embodied Agents in the Era of Foundation Models.</em>  <a href="https://people.eecs.berkeley.edu/~shangding.gu/papers/IEE_TASE_Special_Issue_EAI_CFP.pdf"> Call for Papers.</a> </p>
-
-<!--<p style="font-size: 19px;">I am looking for <b>highly self-motivated students passionate about addressing research challenges in machine learning, LLMs, and robotics.</b> If you are interested in my research, please contact me with details of your background and relevant skills. </p>
--->
-
 <p style="font-size: 19px;">
 We have a small research group working on <b>AI safety, machine learning, LLMs, and robotics</b>. If you are interested in our research, please contact me with details about your background and relevant skills.
 </p>
-
-
-<!-- <span style="font-size: 19px; text-align: justify; font-weight: bold; display: inline;">I am on the 2025-2026 job market looking for full-time academia and industry positions. Please feel free to reach out.</span> -->
-
-<!--<span style="font-size: 19px; text-align: justify; font-weight: bold; display: inline;">I am on the 2025-2026 job market looking for full-time academia and industry positions. Please feel free to reach out.</span>-->
-<!-- <strong>Safe multi-agent reinforcement learning for multi-robot control</strong> -->
-
 <h2>Selected Recent Preprints</h2>
-<!-- <h2>Utterances</h2> -->
-
 <ul>
   <li>
 <div style="margin-left: 8px;">
     <strong>Long Context, Less Focus: A Scaling Gap from the Perspective of Privacy and Personalization.</strong><br/>
     <b><span style="text-decoration: underline">Shangding Gu</span></b><br/>
-    <!-- <em>International Conference on Learning Representations, 2025.</em><br/> -->
-    <a href="https://github.com/SafeRL-Lab/PAPerBench/blob/main/paperbench/preprint_Revealing_a_Scaling_Gap.pdf">[Paper]</a>, <a href="https://github.com/SafeRL-Lab/PAPerBench">[Code]</a><br/>    
+        <a href="https://github.com/SafeRL-Lab/PAPerBench/blob/main/paperbench/preprint_Revealing_a_Scaling_Gap.pdf">[Paper]</a>, <a href="https://github.com/SafeRL-Lab/PAPerBench">[Code]</a><br/>
   </div>
-</li> 
+</li>
 <br/>
 <li>
 <div style="margin-left: 8px;">
     <strong>Measuring Massive Multimodal Understanding and Reasoning in Open Space.</strong><br/>
     <b><span style="text-decoration: underline">Shangding Gu,</span></b> Xiaohan Wang, Donghao Ying, Haoyu Zhao, Runing Yang, Boyi Li, Ming Jin, Marco Pavone, Serena Yeung-Levy, Jun Wang, Dawn Song, Costas Spanos<br/>
-    <a href="https://open-space-reasoning.github.io/">[Paper]</a>, <a href="https://github.com/SafeRL-Lab/OpenRBench">[Code]</a><br/>    
+    <a href="https://open-space-reasoning.github.io/">[Paper]</a>, <a href="https://github.com/SafeRL-Lab/OpenRBench">[Code]</a><br/>
   </div>
-</li> 
+</li>
 <br/>
 <li>
 <div style="margin-left: 8px;">
     <strong>Few-Shot Test-Time Optimization Without Retraining for Semiconductor Recipe Generation and Beyond.</strong><br/>
     <b><span style="text-decoration: underline">Shangding Gu,</span></b> Donghao Ying, Ming Jin, Yu Joe Lu, Jun Wang, Javad Lavaei, Costas Spanos<br/>
-    <!-- <em>International Conference on Learning Representations, 2025.</em><br/> -->
-    <a href="https://arxiv.org/pdf/2505.16060">[Paper]</a>, <a href="https://github.com/SafeRL-Lab">[Code]</a><br/>    
+        <a href="https://arxiv.org/pdf/2505.16060">[Paper]</a>, <a href="https://github.com/SafeRL-Lab">[Code]</a><br/>
   </div>
-</li> 
+</li>
 <br/>
 <li>
 <div style="margin-left: 8px;">
     <strong>Data Uniformity Improves Training Efficiency and More, with a Convergence Framework Beyond the NTK Regime.</strong><br/>
     Yuqing Wang, <b><span style="text-decoration: underline">Shangding Gu</span></b><br/>
-    <!-- <em>International Conference on Learning Representations, 2025.</em><br/> -->
-    <a href="https://arxiv.org/pdf/2506.24120">[Paper]</a>, <a href="https://github.com/SafeRL-Lab/data-uniformity">[Code]</a><br/>    
+        <a href="https://arxiv.org/pdf/2506.24120">[Paper]</a>, <a href="https://github.com/SafeRL-Lab/data-uniformity">[Code]</a><br/>
   </div>
-</li> 
+</li>
 <br/>
 <li>
 <div style="margin-left: 8px;">
     <strong>RLBenchNet: The Right Network for the Right Reinforcement Learning Task.</strong><br/>
     Ivan Smirnov, <b><span style="text-decoration: underline">Shangding Gu</span></b><br/>
-    <!-- <em>International Conference on Learning Representations, 2025.</em><br/> -->
-    <a href="https://arxiv.org/pdf/2505.15040">[Paper]</a>, <a href="https://github.com/SafeRL-Lab/BenchNetRL">[Code]</a><br/>    
+        <a href="https://arxiv.org/pdf/2505.15040">[Paper]</a>, <a href="https://github.com/SafeRL-Lab/BenchNetRL">[Code]</a><br/>
   </div>
-</li> 
+</li>
 <br/>
 <li>
 <div style="margin-left: 8px;">
     <strong>SCPO: Safe Reinforcement Learning with Safety Critic Policy Optimization.</strong><br/>
     Jaafar Mhamed, <b><span style="text-decoration: underline">Shangding Gu</span></b><br/>
-    <!-- <em>International Conference on Learning Representations, 2025.</em><br/> -->
-    <a href="https://arxiv.org/pdf/2311.00880">[Paper]</a>, <a href="https://github.com/SafeRL-Lab/SCPO">[Code]</a><br/>    
+        <a href="https://arxiv.org/pdf/2311.00880">[Paper]</a>, <a href="https://github.com/SafeRL-Lab/SCPO">[Code]</a><br/>
   </div>
-</li> 
-</ul> 
-
-
-
-
-
-<!-- 
-<h2>Student Collaborations</h2>
-<div style="display: flex; align-items: flex-start; margin-bottom: 1.2em;">
-  <div style="flex: 0 0 110px; display: flex; align-items: flex-start; justify-content: flex-start;">
-    <span class="paper-tag" >
-      IEEE TAI
-    </span>
-  </div>
-  <div style="margin-left: 8px;">
-    <strong>Safe Multi-Agent Reinforcement Learning with Bilevel Optimization in Autonomous Driving.</strong><br/>
-    Zheng, Z., <b><span style="text-decoration: underline">Gu, S.</span></b><br/>
-    <em>IEEE Transactions on Artificial Intelligence. 2024.</em><br/>
-    <a href="https://arxiv.org/pdf/2405.18209">[Paper]</a>, <a href="https://github.com/SafeRL-Lab/Safe-MARL-in-Autonomous-Driving">[Code]</a><br/>
-  </div>
-</div> -->
-
+</li>
+</ul>
 <h2>Selected Recent Publications</h2>
-
-<!-- ======== 第1篇论文 ======== -->
 <div style="display: flex; align-items: flex-start; margin-bottom: 1.2em;">
-  <!-- 左列：设置一个合适宽度以容纳“ICML 2024”等标签，并用 align-items: flex-start 使其和右侧文字顶对齐 -->
-  <div style="flex: 0 0 110px; display: flex; align-items: flex-start; justify-content: flex-start;">
+    <div style="flex: 0 0 110px; display: flex; align-items: flex-start; justify-content: flex-start;">
     <span class="paper-tag" >
-      ICLR 
+      ICLR
     </span>
   </div>
-  <!-- 右列：论文信息 -->
-  <div style="margin-left: 8px;">
+    <div style="margin-left: 8px;">
     <strong>Robust Gymnasium: A Unified Modular Benchmark for Robust Reinforcement Learning.</strong><br/>
     <b><span style="text-decoration: underline">Shangding Gu, </span></b>Laixi Shi, Muning Wen, Ming Jin, Eric Mazumdar, Yuejie Chi, Adam Wierman, Costas Spanos<br/>
     <em>International Conference on Learning Representations, 2025.</em><br/>
     <a href="https://arxiv.org/pdf/2502.19652">[Paper]</a>, <a href="https://github.com/SafeRL-Lab/Robust-Gymnasium">[Code]</a><br/>
-    <!-- <a href="#">[HTML]</a>  -->
-    <!-- <a href="#">[CODE]</a> -->
-  </div>
+          </div>
 </div>
-
-<!-- ======== 第2篇论文 ======== -->
 <div style="display: flex; align-items: flex-start; margin-bottom: 1.2em;">
   <div style="flex: 0 0 110px; display: flex; align-items: flex-start; justify-content: flex-start;">
     <span class="paper-tag" >
@@ -355,12 +191,8 @@ We have a small research group working on <b>AI safety, machine learning, LLMs, 
     <b><span style="text-decoration: underline">Shangding Gu, </span></b>Bilgehan Sel, Yuhao Ding, Lu Wang, Qingwei Lin, Alois Knoll, Ming Jin.<br/>
     <em>IEEE Transactions on Pattern Analysis and Machine Intelligence, 2025.</em><br/>
     <a href="https://arxiv.org/pdf/2405.16390">[Paper]</a>, <a href="https://github.com/SafeRL-Lab/CMORL">[Code]</a><br/>
-    <!-- <a href="#">[HTML]</a>  -->
-    <!-- <a href="#">[CODE]</a> -->
-  </div>
+          </div>
 </div>
-
-<!-- ======== 第3篇论文 ======== -->
 <div style="display: flex; align-items: flex-start; margin-bottom: 1.2em;">
   <div style="flex: 0 0 110px; display: flex; align-items: flex-start; justify-content: flex-start;">
     <span class="paper-tag" >
@@ -372,16 +204,12 @@ We have a small research group working on <b>AI safety, machine learning, LLMs, 
     <b><span style="text-decoration: underline">Shangding Gu, </span></b>Alois Knoll, Ming, Jin.<br/>
     <em>Transactions on Machine Learning Research, 2024.</em><br/>
     <a href="https://arxiv.org/pdf/2403.08694">[Paper]</a>, <a href="https://github.com/SafeRL-Lab/TeaMs-RL">[Code]</a><br/>
-    <!-- <a href="#">[HTML]</a>  -->
-    <!-- <a href="#">[CODE]</a> -->
-  </div>
+          </div>
 </div>
-
-<!-- ======== 第4篇论文 ======== -->
 <div style="display: flex; align-items: flex-start; margin-bottom: 1.2em;">
   <div style="flex: 0 0 110px; display: flex; align-items: flex-start; justify-content: flex-start;">
     <span class="paper-tag" >
-      NeurIPS 
+      NeurIPS
     </span>
   </div>
   <div style="margin-left: 8px;">
@@ -389,12 +217,8 @@ We have a small research group working on <b>AI safety, machine learning, LLMs, 
     <b><span style="text-decoration: underline">Shangding Gu, </span></b>Laixi Shi, Yuhao Ding, Alois Knoll, Costas Spanos, Adam Wierman, Ming Jin.<br/>
     <em>Advances in Neural Information Processing Systems, 2024.</em><br/>
     <a href="https://arxiv.org/pdf/2405.20860">[Paper]</a>, <a href="https://github.com/SafeRL-Lab">[Code]</a><br/>
-    <!-- <a href="#">[HTML]</a>  -->
-    <!-- <a href="#">[CODE]</a> -->
-  </div>
+          </div>
 </div>
-
-<!-- ======== 第5篇论文 ======== -->
 <div style="display: flex; align-items: flex-start; margin-bottom: 1.2em;">
   <div style="flex: 0 0 110px; display: flex; align-items: flex-start; justify-content: flex-start;">
     <span class="paper-tag" >
@@ -406,12 +230,8 @@ We have a small research group working on <b>AI safety, machine learning, LLMs, 
     <b><span style="text-decoration: underline">Shangding Gu, </span></b>  Long Yang, Yali Du, Guang Chen, Florian Walter, Jun Wang, Alois Knoll.<br/>
     <em>IEEE Transactions on Pattern Analysis and Machine Intelligence, 2024.</em><br/>
     <a href="https://arxiv.org/pdf/2205.10330">[Paper]</a>, <a href="https://github.com/chauncygu/Safe-Reinforcement-Learning-Baselines">[Code]</a><br/>
-    <!-- <a href="#">[HTML]</a>  -->
-    <!-- <a href="#">[CODE]</a> -->
-  </div>
+          </div>
 </div>
-
-<!-- ======== 第6篇论文 ======== -->
 <div style="display: flex; align-items: flex-start; margin-bottom: 1.2em;">
   <div style="flex: 0 0 110px; display: flex; align-items: flex-start; justify-content: flex-start;">
     <span class="paper-tag" >
@@ -423,14 +243,8 @@ We have a small research group working on <b>AI safety, machine learning, LLMs, 
     <b><span style="text-decoration: underline">Shangding Gu, </span></b> Bilgehan Sel, Yuhao Ding, Lu Wang, Qingwei Lin, Ming Jin, Alois Knoll.<br/>
     <em>Association for the Advancement of Artificial Intelligence, 2024.</em><br/>
     <a href="https://arxiv.org/pdf/2405.01677">[Paper]</a>, <a href="https://github.com/SafeRL-Lab/Safety-MuJoCo">[Code]</a><br/>
-    <!-- <a href="#">[HTML]</a>  -->
-    <!-- <a href="#">[CODE]</a> -->
-  </div>
+          </div>
 </div>
-
-
-
-<!-- ======== 第7篇论文 ======== -->
 <div style="display: flex; align-items: flex-start; margin-bottom: 1.2em;">
   <div style="flex: 0 0 110px; display: flex; align-items: flex-start; justify-content: flex-start;">
     <span class="paper-tag" >
@@ -442,12 +256,8 @@ We have a small research group working on <b>AI safety, machine learning, LLMs, 
     <b><span style="text-decoration: underline">Shangding Gu, </span></b> Puze Liu, Alap Kshirsagar, Guang Chen, Jan Peters, Alois Knoll. <br/>
     <em>IEEE Transactions on Automation Science and Engineering. 2024.</em><br/>
     <a href="https://ieeexplore.ieee.org/abstract/document/10616119">[Paper]</a>, <a href="https://github.com/SafeRL-Lab">[Code]</a><br/>
-    <!-- <a href="#">[HTML]</a>  -->
-    <!-- <a href="#">[CODE]</a> -->
-  </div>
+          </div>
 </div>
-
-<!-- ======== 第8篇论文 ======== -->
 <div style="display: flex; align-items: flex-start; margin-bottom: 1.2em;">
   <div style="flex: 0 0 110px; display: flex; align-items: flex-start; justify-content: flex-start;">
     <span class="paper-tag" >
@@ -459,14 +269,8 @@ We have a small research group working on <b>AI safety, machine learning, LLMs, 
     <b><span style="text-decoration: underline">Shangding Gu, </span></b> Jakub Grudzien Kuba, Yuanpei Chen, Yali Du, Long Yang, Alois Knoll, Yaodong Yang.<br/>
     <em>The Journal of Artificial Intelligence, 2023.</em><br/>
     <a href="https://www.sciencedirect.com/science/article/abs/pii/S0004370223000516">[Paper]</a>, <a href="https://github.com/chauncygu/Multi-Agent-Constrained-Policy-Optimisation">[Code]</a><br/>
-    <!-- <a href="#">[HTML]</a>  -->
-    <!-- <a href="#">[CODE]</a> -->
-  </div>
+          </div>
 </div>
-
-
-
-<!-- <h2>Student Collaborations</h2> -->
 <div style="display: flex; align-items: flex-start; margin-bottom: 1.2em;">
   <div style="flex: 0 0 110px; display: flex; align-items: flex-start; justify-content: flex-start;">
     <span class="paper-tag" >
@@ -480,41 +284,18 @@ We have a small research group working on <b>AI safety, machine learning, LLMs, 
     <a href="https://arxiv.org/pdf/2405.18209">[Paper]</a>, <a href="https://github.com/SafeRL-Lab/Safe-MARL-in-Autonomous-Driving">[Code]</a><br/>
   </div>
 </div>
-
-
-<!-- <ul>
-<li><p><b><span style="text-decoration: underline">Gu, S*.,</span></b> Shi, L*., Wen, M., Jin, M., Mazumdar, E., Chi, Y., Wierman, A., Spanos, C.. (2025). Robust Gymnasium: A Unified Modular Benchmark for Robust Reinforcement Learning.    <i>ICLR 2025.</i></p>
-</li>
-<li><p><b><span style="text-decoration: underline">Gu, S.,</span></b> Sel, B., Ding, Y., Wang, L., Lin, Q., Knoll, A., & Jin, M. (2025). Safe and Balanced: A Framework for Constrained Multi-Objective Reinforcement Learning.   <i>IEEE Transactions on Pattern Analysis and Machine Intelligence.</i></p>
-</li>
-<li><p><b><span style="text-decoration: underline">Gu, S.,</span></b> Knoll, A., & Jin, M. (2024). TeaMs-RL: Teaching LLMs to Generate Better Instruction Datasets via Reinforcement Learning. <i>Transactions on Machine Learning Research.</i></p>
-</li>
-<li><p><b><span style="text-decoration: underline">Gu, S*.,</span></b> Shi, L*., Ding, Y., Knoll, A., Spanos, C., Wierman, A., & Jin, M. (2024). Enhancing Efficiency of Safe Reinforcement Learning via Sample Manipulation. <i>NeurIPS.</i></p>
-</li>
-<li><p><b><span style="text-decoration: underline">Gu, S.,</span></b> Yang, L., Du, Y., Chen, G., Walter, F., Wang, J., & Knoll, A. (2024). A review of safe reinforcement learning: Methods, theory and applications. <i>IEEE Transactions on Pattern Analysis and Machine Intelligence.</i></p>
-</li>
-</li>
-<li><p><b><span style="text-decoration: underline">Gu, S.,</span></b> Bilgehan S., Ding, Y., Wang, L., Lin, Q., Jin, M., Knoll, A. (2024). Balance Reward and Safety Optimization for Safe Reinforcement Learning: A Perspective of Gradient Manipulation. <i>AAAI 2024 (Oral paper: top 0.5%).</i></p>
-</li>
-<li><p><b><span style="text-decoration: underline">Gu, S.,</span></b> Kuba, J. G., Chen, Y., Du, Y., Yang, L., Knoll, A., & Yang, Y. (2023). Safe multi-agent reinforcement learning for multi-robot control. <i>Artificial Intelligence, 319, 103905.</i></p>
-</li>
-</ul> -->
-
-<!-- #bd1eb4 -->
-
-
-<h2>Recent News</h2> 
+<h2>Recent News</h2>
 <p style="font-size: 19px;">11.2025: Gave a talk on Safe Robot Learning at <a href="https://sites.google.com/berkeley.edu/lemas-seminar">Shankar Sastry Group</a>, UC Berkeley. </p>
 <p style="font-size: 19px;">10.2025: Gave a talk on Safe Learning at the Applied Mathematics and Statistics Department Postdoctoral Seminar at Johns Hopkins University. </p>
 <p style="font-size: 19px;">09.2025: Our papers on safe RL and LLMs got accepted by <font color="#bd1eb4">NeurIPS 2025</font> and <font color="#bd1eb4">EMNLP 2025</font> </p>
 <p style="font-size: 19px;">
-  08.2025: I will be giving a talk at the 
-  <a href="https://meetings.informs.org/wordpress/annual/" target="_blank">2025 INFORMS Annual Meeting</a> 
+  08.2025: I will be giving a talk at the
+  <a href="https://meetings.informs.org/wordpress/annual/" target="_blank">2025 INFORMS Annual Meeting</a>
   in Atlanta, Georgia, USA (October 26–29). Looking forward to connecting with you there!
 </p>
 <p style="font-size: 19px;">
-  07.2025: We released <strong>Agentic Web</strong>, a study on the web agent research:  
-  <a href="https://arxiv.org/pdf/2507.21206?" target="_blank">Paper</a> | 
+  07.2025: We released <strong>Agentic Web</strong>, a study on the web agent research:
+  <a href="https://arxiv.org/pdf/2507.21206?" target="_blank">Paper</a> |
   <a href="https://github.com/SafeRL-Lab/agentic-web" target="_blank">Github</a>
 </p>
 <p style="font-size: 19px;">05.2025: We released <strong><a href="https://open-space-reasoning.github.io" target="_blank">M4R</a></strong>, a benchmark for evaluating massive multimodal understanding and reasoning in open space.
@@ -555,35 +336,18 @@ We have a small research group working on <b>AI safety, machine learning, LLMs, 
 <p style="font-size: 19px;">11.2022: Invited a safe RL talk at the RL China community</p>
 <p style="font-size: 19px;">10.2022: Invited a safe RL talk at <a href="https://www.ias.informatik.tu-darmstadt.de/Member/JanPeters">Prof. Jan Peters' lab</a></p>
 <p style="font-size: 19px;">09.2022: We launched the <a href="https://saferl.online/2022/">1st Safe RL Workshop</a> @ IEEE MFI 2022</p>
-
-
-
 </div></div>
-<!-- <h2>Biography</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<h2>Research statement</h2>
-<p>Pellentesque gravida metus purus, non blandit ligula dignissim a. Etiam vulputate nibh condimentum dui congue tempor. Vestibulum consequat non neque at tincidunt. Mauris accumsan a augue at consectetur. Praesent non nunc accumsan, feugiat nisl quis, ullamcorper est. Fusce a ex ornare libero venenatis tincidunt sed vel sem. Suspendisse id nibh at nisl pellentesque pellentesque non sit amet nisl.</p>
-<p>Cras convallis ex et felis ullamcorper, ut blandit velit efficitur. Nunc et ullamcorper lectus. Maecenas accumsan tortor volutpat dolor viverra lobortis. Duis elit justo, interdum vitae augue a, gravida lacinia nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam in nulla eget magna vehicula vehicula quis id libero. Suspendisse elit sem, dignissim quis quam vitae, lacinia placerat nulla. Cras vehicula quis eros luctus condimentum. Pellentesque urna nunc, elementum ut mauris eu, pulvinar congue dui. Curabitur finibus egestas dolor vitae gravida. Integer venenatis, nisi sed iaculis tincidunt, tellus neque vehicula felis, sed viverra leo nunc at lorem. Curabitur in finibus purus. Aliquam dictum velit enim, sed vestibulum eros fringilla vitae. Donec tristique sapien dictum nisl pharetra dictum. Etiam non laoreet nisi, nec convallis quam. In commodo massa lacus, eget tincidunt odio elementum et.</p>
-<h2>Current Project</h2>
-<p>Donec tellus eros, rhoncus nec imperdiet in, tempus et mi. Quisque id feugiat enim. Suspendisse porta consequat velit, ac ullamcorper purus suscipit ac. Mauris laoreet varius urna. Suspendisse potenti. In et laoreet augue, et lobortis tellus. Etiam nec tortor tempus, lobortis turpis id, fermentum dolor. Mauris orci ante, porttitor ac viverra et, facilisis in lectus. Praesent faucibus non elit sit amet cursus. Duis eu viverra lectus, nec blandit magna. Nullam id ante semper, vestibulum neque tristique, accumsan ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam mollis velit fermentum ex bibendum, eget molestie nisl porta.</p> -->
-</div> <!-- <div id="layout-content"> -->
-
-
-
-
-
-
+</div>
 <div id="footer-container">
 <div id="footer">
 <div id="footer-text">
-<!-- Last edited  on July 1<sup>st</sup> 2020  12:34PM (Time Zone: PDT). </br> -->
 © 2025 Shangding Gu.
-</div> <!-- <div id="footer-text"> -->
-</div> <!-- <div id="footer"> -->
-</div> <!-- <div id="footer-container"> -->
-</div> <!-- <div id="layout-content-container"> -->
-</div> <!--- <div id="layout"> --->
-</div> <!--- <div id="main-container"> --->
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 <script>
 function openNav() {
     if (window.innerWidth <= 1200) {
