@@ -1,3 +1,14 @@
+/* ---- Palette --------------------------------------------------------------
+   仅顶栏换成深藏蓝 #0A2245（取自 wnzhang.net，配白色交大校徽）。
+   其余强调色一律沿用原站配色，未作改动。
+   -------------------------------------------------------------------------- */
+:root {
+	--brand:      #0A2245;  /* 顶栏（新）*/
+	--accent:     #bd1eb4;  /* 原站强调色：标签、会议名、产品卡 */
+	--accent-hov: #ea4aaa;  /* 原站 hover */
+	--metric:     #FF0000;  /* 原站 IF / Oral 标注 */
+}
+
 /* Default css file for jemdoc. */
 
 body {
@@ -24,7 +35,7 @@ div#header-container {
 div#header {
 	width: 100vw;
 	height: 70px;
-	background: #003362;
+	background: var(--brand);
 	z-index: 1;
 	position: fixed;
 	display:inline-block;
@@ -81,7 +92,7 @@ flex-direction: row-reverse;
 justify-content: space-between;
 align-items: center;
 padding: 8px 25px;
-background-color: #003362;
+background-color: var(--brand);
 }
 
 div#header-text-container {
@@ -145,7 +156,7 @@ div#layout-menu {
 	height: calc(100% - 97px);
 	min-width: 280px;
 	position: fixed;
-	overflow: scroll;
+	overflow: auto;
 	background: #f6f8fa;
 	border-right: 0.8px solid #e1e4e8;
 }
@@ -190,7 +201,7 @@ pre, tt {
 	font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
 	border-radius: 5px;
 	line-height: 1.5;
-	overflow: scroll;
+	overflow: auto;
 }
 
 a, a > tt {
@@ -200,7 +211,7 @@ a, a > tt {
 
 a:hover, a:hover > tt{
 	/*border-bottom: 1.25px #0366d6 dashed;*/
-	color: #ea4aaa;
+	color: var(--accent-hov);
 }
 
 #layout-menu a.current:link, #layout-menu a.current:visited {
@@ -212,7 +223,7 @@ a:hover, a:hover > tt{
 	text-decoration: none;
 }
 #layout-menu a:hover {
-	color: #ea4aaa;
+	color: var(--accent-hov);
 	text-decoration: none;
 }
 
@@ -348,7 +359,7 @@ div#footer a {
 }
 
 div#footer a:hover {
-	color: #ea4aaa;
+	color: var(--accent-hov);
 }
 
 div#footer-text {

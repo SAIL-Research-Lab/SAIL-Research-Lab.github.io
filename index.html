@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<link rel="icon" href="./images/berkeley_logo.ico">
+<link rel="icon" type="image/svg+xml" href="./images/SJTU-logo.svg">
 <link rel="stylesheet" href="main.css" type="text/css" />
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 <!--- <title></title> --->
@@ -21,7 +21,7 @@ MathJax.Hub.Config({
 <!-- End MathJax -->
 <style>
         #header-container {
-            background-color: #f5f5f5; /* Replace #f5f5f5 with your logo's background color */
+            background-color: var(--brand);
         }
         /* 让 logo-container 变成一个居中的容器 */
         /*.paper-tag {
@@ -34,8 +34,7 @@ MathJax.Hub.Config({
         }*/
 
         .paper-tag {
-/*  background-color: purple; */
-background-color: #bd1eb4; 
+  background-color: var(--accent);
   color: #fff;
   padding: 4px 8px;
   border-radius: 4px;
@@ -55,6 +54,10 @@ background-color: #bd1eb4;
   word-wrap: break-word;
 }
 
+        /* News 里的会议/期刊名与次级指标 */
+        .venue  { color: var(--accent); }
+        .metric { color: var(--metric); }
+
         /* Products & Demos cards */
         .product-grid {
             display: flex;
@@ -66,7 +69,7 @@ background-color: #bd1eb4;
         .product-card {
             flex: 1 1 220px;
             border: 1px solid #e1e4e8;
-            border-top: 3px solid #bd1eb4;
+            border-top: 3px solid var(--accent);
             border-radius: 10px;
             padding: 16px 18px;
             display: flex;
@@ -99,11 +102,11 @@ background-color: #bd1eb4;
         .product-card .product-link {
             font-size: 15px;
             font-weight: 600;
-            color: #bd1eb4;
+            color: var(--accent);
             align-self: flex-start;
         }
         .product-card .product-link:hover {
-            color: #ea4aaa;
+            color: var(--accent-hov);
         }
 
 
@@ -116,14 +119,14 @@ background-color: #bd1eb4;
 <div id="header-icon-text-container">
     <!-- <a href="index.html"><img src="./images/ucb_eecs_logo.jpeg" alt=""></a> -->
 <div id="header-icon-container" >
-    <a href="https://eecs.berkeley.edu/"><img src="./images/ucb_eecs_logo.svg" alt="" style="width: 100%; height: 100%; position: center; padding:0px; margin: 0px;"></a>
+    <a href="https://www.cs.sjtu.edu.cn/"><img src="./images/SJTU-logo-white.svg" alt="Shanghai Jiao Tong University" style="height: 100%; width: auto; padding:0px; margin: 0px;"></a>
 <!-- <a href="index.html"><img src="./images/ucb_eecs_logo.jpeg" alt="" style="width: 100%; height: 100%; position: center; padding:0px; margin: 0px;"></a> -->
 </div>
 <div id="header-text-container">
 <a href="index.html">Shangding Gu</a>
 </div>
 <!-- <div id="logo-container">
-        <img src="./images/ucb_eecs_logo.svg" alt="My Logo" id="my-logo">
+        <img src="./images/SJTU-logo-white.svg" alt="My Logo" id="my-logo">
 </div> -->
 
 </div>
@@ -189,9 +192,12 @@ background-color: #bd1eb4;
         I have received multiple grants and scholarships to support my research, including from Nvidia, OpenAI, and Bosch.
     </h3> -->
     <h3 style="text-align: justify; margin-top: -4px;">
-        My name is Shangding Gu (顾尚定), and I am a postdoctoral researcher in the 
-        <a href="https://eecs.berkeley.edu/">Department of EECS</a> at UC Berkeley. 
-        I am fortunate to have the opportunity to work with 
+        My name is Shangding Gu (顾尚定), and I am a tenure-track Associate Professor in the 
+        <a href="https://www.cs.sjtu.edu.cn/">School of Computer Science</a> at 
+        <a href="https://en.sjtu.edu.cn/">Shanghai Jiao Tong University</a>. 
+        Before joining SJTU, I was a postdoctoral researcher in the 
+        <a href="https://eecs.berkeley.edu/">Department of EECS</a> at UC Berkeley, 
+        where I was fortunate to have the opportunity to work with 
         <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/spanos.html">Prof. Costas Spanos</a> and <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/song.html">Prof. Dawn Song</a>.
         In 2024, I earned my <a href="./papers/PhD_Dissertation_Shangding_Gu_2024.pdf" target="_blank">Ph.D.</a> in Computer Science from 
         <a href="https://www.tum.de/en/">Technical University of Munich</a>, where I was fortunate to be advised by 
@@ -277,7 +283,7 @@ https://bpec.berkeley.edu/
 
 <p style="font-size: 19px;">My current research focuses on reinforcement learning, planning, and AI safety, with applications in foundation models (e.g., large language models and multimodal models), robotics, and semiconductor manufacturing.  My goal is to design <span style="font-weight: bold; display: inline;"> safe, reliable, and efficient systems that address pressing real-world challenges and drive impactful applications across diverse domains</span>. My work has been featured in leading publications, including top-tier journals and conferences such as the Journal of Artificial Intelligence, IEEE Transactions on Pattern Analysis and Machine Intelligence, NeurIPS, and other prestigious venues. Outside of research, I enjoy playing guitar, reading, running, hiking, swimming, and playing badminton with friends.</p>
 
-<!-- <span style="font-size: 19px; text-align: justify; "><font color="#bd1eb4">I am on the 2025-2026 job market looking for full-time academia and industry positions. Please feel free to reach out.</font></span> -->
+<!-- <span style="font-size: 19px; text-align: justify; "><span class="venue">I am on the 2025-2026 job market looking for full-time academia and industry positions. Please feel free to reach out.</span></span> -->
 <p style="font-size: 19px;">I am a <b>lead guest editor</b> for <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8856">IEEE Transactions on Automation Science and Engineering</a>, for the Special Issue on <em>Trustworthy AI for Automation Control of Embodied Agents in the Era of Foundation Models.</em>  <a href="https://people.eecs.berkeley.edu/~shangding.gu/papers/IEE_TASE_Special_Issue_EAI_CFP.pdf"> Call for Papers.</a> </p>
 
 <!--<p style="font-size: 19px;">I am looking for <b>highly self-motivated students passionate about addressing research challenges in machine learning, LLMs, and robotics.</b> If you are interested in my research, please contact me with details of your background and relevant skills. </p>
@@ -596,11 +602,11 @@ We have a small research group working on <b>AI safety, machine learning, LLMs, 
 
 
 <h2>Recent News</h2> 
-<p style="font-size: 19px;">03.2026: Our papers on reinforcement learning for drug design got accepted by <font color="#bd1eb4">Science Advances</font>.</p>
+<p style="font-size: 19px;">03.2026: Our papers on reinforcement learning for drug design got accepted by <span class="venue">Science Advances</span>.</p>
 <p style="font-size: 19px;">03.2026: Invited to serve as an Area Chair for <a href="https://neurips.cc/Conferences/2026">NeurIPS 2026</a>. </p>
 <p style="font-size: 19px;">11.2025: Gave a talk on Safe Robot Learning at <a href="https://sites.google.com/berkeley.edu/lemas-seminar">Shankar Sastry Group</a>, UC Berkeley. </p>
 <p style="font-size: 19px;">10.2025: Gave a talk on Safe Learning at the Applied Mathematics and Statistics Department Postdoctoral Seminar at Johns Hopkins University. </p>
-<p style="font-size: 19px;">09.2025: Our papers on safe RL and LLMs got accepted by <font color="#bd1eb4">NeurIPS 2025</font> and <font color="#bd1eb4">EMNLP 2025</font> </p>
+<p style="font-size: 19px;">09.2025: Our papers on safe RL and LLMs got accepted by <span class="venue">NeurIPS 2025</span> and <span class="venue">EMNLP 2025</span> </p>
 <p style="font-size: 19px;">
   08.2025: I will be giving a talk at the 
   <a href="https://meetings.informs.org/wordpress/annual/" target="_blank">2025 INFORMS Annual Meeting</a> 
@@ -618,33 +624,33 @@ We have a small research group working on <b>AI safety, machine learning, LLMs, 
     Code is available at:
     <a href="https://github.com/SafeRL-Lab/BenchNetRL" target="_blank">https://github.com/SafeRL-Lab/BenchNetRL</a></p>
 <p style="font-size: 19px;">04.2025: Gave a talk on Safe Robot Learning at <a href="https://msl.stanford.edu/">Mac Schwager's Lab</a>, Stanford University. </p>
-<p style="font-size: 19px;">03.2025: <font color="#bd1eb4">Received a grant</font> from <a href="https://www.nvidia.com/en-us/"> Nvidia</a> to support my research!</p>
+<p style="font-size: 19px;">03.2025: <span class="venue">Received a grant</span> from <a href="https://www.nvidia.com/en-us/"> Nvidia</a> to support my research!</p>
 <p style="font-size: 19px;">03.2025: I am a <b>lead guest editor</b> for the prestigious journal <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8856">IEEE Transactions on Automation Science and Engineering</a>, for the Special Issue on <em>Trustworthy AI for Automation Control of Embodied Agents in the Era of Foundation Models.</em> See <a href="https://people.eecs.berkeley.edu/~shangding.gu/papers/IEE_TASE_Special_Issue_EAI_CFP.pdf">Call for Papers.</a> </p>
-<p style="font-size: 19px;">01.2025: Our paper on robust reinforcement learning got accepted by <font color="#bd1eb4">ICLR 2025</font> </p>
+<p style="font-size: 19px;">01.2025: Our paper on robust reinforcement learning got accepted by <span class="venue">ICLR 2025</span> </p>
 <p style="font-size: 19px;">01.2025: We launched the 1st International Workshop on AI Agent Reasoning and Decision-Making (AIR 2025), see <a href="https://ai-agent-reasoning.com/">workshop homepage</a> </p>
-<p style="font-size: 19px;">01.2025: <font color="#bd1eb4">Received a grant</font> from <a href="https://openai.com/"> OpenAI</a> to support my research!</p>
-<p style="font-size: 19px;">01.2025: Our paper on safe multi-objective reinforcement learning got accepted by <font color="#bd1eb4">IEEE Transactions on Pattern Analysis and Machine Intelligence</font> </p>
-<p style="font-size: 19px;">12.2024: Our paper on reinforcement learning for data generation in large language models got accepted by <font color="#bd1eb4">Transactions on Machine Learning Research</font> </p>
+<p style="font-size: 19px;">01.2025: <span class="venue">Received a grant</span> from <a href="https://openai.com/"> OpenAI</a> to support my research!</p>
+<p style="font-size: 19px;">01.2025: Our paper on safe multi-objective reinforcement learning got accepted by <span class="venue">IEEE Transactions on Pattern Analysis and Machine Intelligence</span> </p>
+<p style="font-size: 19px;">12.2024: Our paper on reinforcement learning for data generation in large language models got accepted by <span class="venue">Transactions on Machine Learning Research</span> </p>
 <p style="font-size: 19px;">12.2024: Invited as a member of the youth editorial board for the <a href="https://www.elspub.com/journals/artificial-intelligence-and-autonomous-systems/home"> Journal of Artificial Intelligence and Autonomous Systems</a> </p>
-<p style="font-size: 19px;">12.2024: Our paper on mutual enhancement of reinforcement learning and large language models got accepted by <font color="#bd1eb4">AAAI 2025 Workshop LM4Plan</font> </p>
-<p style="font-size: 19px;">12.2024: Our paper on safe reinforcement learning for unmanned ship multi-objective path planning got accepted by <font color="#bd1eb4">Ocean Engineering</font> </p>
+<p style="font-size: 19px;">12.2024: Our paper on mutual enhancement of reinforcement learning and large language models got accepted by <span class="venue">AAAI 2025 Workshop LM4Plan</span> </p>
+<p style="font-size: 19px;">12.2024: Our paper on safe reinforcement learning for unmanned ship multi-objective path planning got accepted by <span class="venue">Ocean Engineering</span> </p>
 <p style="font-size: 19px;">11.2024: Invited lecture on safe reinforcement learning and its applications in Virginia Tech's Machine Learning course </p>
-<p style="font-size: 19px;">11.2024: Our paper on high-throughput parallel reinforcement learning framework got accepted by <font color="#bd1eb4">IEEE Transactions on Parallel and Distributed Systems</font> </p>
-<p style="font-size: 19px;">10.2024: Our paper on safe multi-agent reinforcement learning for autonomous driving got accepted by <font color="#bd1eb4">IEEE Transactions on Artificial Intelligence</font> </p>
-<p style="font-size: 19px;">09.2024: Our paper on efficient safe reinforcement learning got accepted by <font color="#bd1eb4">NeurIPS 2024</font> </p>
+<p style="font-size: 19px;">11.2024: Our paper on high-throughput parallel reinforcement learning framework got accepted by <span class="venue">IEEE Transactions on Parallel and Distributed Systems</span> </p>
+<p style="font-size: 19px;">10.2024: Our paper on safe multi-agent reinforcement learning for autonomous driving got accepted by <span class="venue">IEEE Transactions on Artificial Intelligence</span> </p>
+<p style="font-size: 19px;">09.2024: Our paper on efficient safe reinforcement learning got accepted by <span class="venue">NeurIPS 2024</span> </p>
 <p style="font-size: 19px;">09.2024: We presented a tutorial on safe reinforcement learning for smart grid control and operations at <a href="https://sgc2024.ieee-smartgridcomm.org/">IEEE SmartGridComm 2024</a>, see <a href="https://docs.google.com/presentation/d/1o3t3KMfgCL5fo_zHZH2ChMkJTkbJ7sY7lMomBE8iRNE/edit?usp=sharing">Slides</a></p>
-<p style="font-size: 19px;">09.2024: Our paper on safe reinforcement learning got accepted by <font color="#bd1eb4">IEEE Transactions on Pattern Analysis and Machine Intelligence</font> (<font color="#FF0000">IF: 20.8</font>) </p>
+<p style="font-size: 19px;">09.2024: Our paper on safe reinforcement learning got accepted by <span class="venue">IEEE Transactions on Pattern Analysis and Machine Intelligence</span> (<span class="metric">IF: 20.8</span>) </p>
 <p style="font-size: 19px;">08.2024: We presented a tutorial on safe reinforcement learning: bridging theory and practice at <a href="https://ijcai24.org/">IJCAI 2024</a>, see <a href="https://docs.google.com/presentation/d/1slZyKj1G_XvtH8laWMClcQVMLbiQyqKW25cV9gY3ypE/edit?usp=sharing">Slides</a></p>
 <p style="font-size: 19px;">08.2024: Invited lecture on safe robot learning in WHUT summer course </p>
-<p style="font-size: 19px;">07.2024: Our paper on robust safe robot learning got accepted by <font color="#bd1eb4">IEEE Transactions on Automation Science and Engineering</font> (<font color="#FF0000">IF: 5.9</font>) </p>
+<p style="font-size: 19px;">07.2024: Our paper on robust safe robot learning got accepted by <span class="venue">IEEE Transactions on Automation Science and Engineering</span> (<span class="metric">IF: 5.9</span>) </p>
 <p style="font-size: 19px;">05.2024: Join us at SmartGridComm 2024 Workshop on <a href="https://sites.google.com/view/srl4sgsmartgridcomm24/home"> Safe RL for Smart Grid Control and Operations</a> (<a href="https://sites.google.com/view/srl4sgsmartgridcomm24/call-for-papers">Call for Contributions</a>)</p>
-<p style="font-size: 19px;">04.2024: Our paper on safe learning for real-world robot control got accepted by <font color="#bd1eb4">IEEE Transactions on Industrial Informatics</font>  (<font color="#FF0000">IF: 12.3</font>) </p>
+<p style="font-size: 19px;">04.2024: Our paper on safe learning for real-world robot control got accepted by <span class="venue">IEEE Transactions on Industrial Informatics</span>  (<span class="metric">IF: 12.3</span>) </p>
 <p style="font-size: 19px;">03.2024: Join us at IJCAI 2024 Workshop on <a href="https://sites.google.com/view/ijcai24-tfm"> Trustworthy Interactive Decision Making with Foundation Models</a> (<a href="https://sites.google.com/view/ijcai24-tfm/call-for-papers?authuser=0">Call for Contributions</a>)</p>
-<p style="font-size: 19px;">12.2023: Our paper on safety and reward balance for safe RL got accepted by <font color="#bd1eb4">AAAI 2024</font>  (<font color="#FF0000">Oral Paper</font>)</p>
-<p style="font-size: 19px;">10.2023: Our paper on a safe human-robot learning framework got accepted by <font color="#bd1eb4">Frontiers in Neurorobotics</font> </p>
-<p style="font-size: 19px;">08.2023: Our paper on RL for autonomous driving parking lots got accepted by <font color="#bd1eb4">IEEE Transactions on Cybernetics</font>  (<font color="#FF0000">IF: 11.8</font>)</p>
-<p style="font-size: 19px;">06.2023: Our paper on offline RL with uncertain action constraint got accepted by <font color="#bd1eb4">IEEE Transactions on Cognitive and Developmental Systems</font> </p>
-<p style="font-size: 19px;">03.2023: Our paper on safe multi-robot learning got accepted by <font color="#bd1eb4">the journal of Artificial Intelligence</font>   (<font color="#FF0000">IF: 14.4</font>)</p>
+<p style="font-size: 19px;">12.2023: Our paper on safety and reward balance for safe RL got accepted by <span class="venue">AAAI 2024</span>  (<span class="metric">Oral Paper</span>)</p>
+<p style="font-size: 19px;">10.2023: Our paper on a safe human-robot learning framework got accepted by <span class="venue">Frontiers in Neurorobotics</span> </p>
+<p style="font-size: 19px;">08.2023: Our paper on RL for autonomous driving parking lots got accepted by <span class="venue">IEEE Transactions on Cybernetics</span>  (<span class="metric">IF: 11.8</span>)</p>
+<p style="font-size: 19px;">06.2023: Our paper on offline RL with uncertain action constraint got accepted by <span class="venue">IEEE Transactions on Cognitive and Developmental Systems</span> </p>
+<p style="font-size: 19px;">03.2023: Our paper on safe multi-robot learning got accepted by <span class="venue">the journal of Artificial Intelligence</span>   (<span class="metric">IF: 14.4</span>)</p>
 <p style="font-size: 19px;">12.2022: We launched a long-term safe reinforcement learning online seminar. Every month, we will invite at least one speaker to share cutting-edge research with RL researchers and students (each speaker has about 1 hour to share his/her research). We believe that holding this seminar can  promote the research of safe reinforcement learning. For details, please see the <a href="https://sites.google.com/view/saferl-seminar/home"> Seminar Homepage</a></p>
 <p style="font-size: 19px;">11.2022: Invited a safe RL talk at the RL China community</p>
 <p style="font-size: 19px;">10.2022: Invited a safe RL talk at <a href="https://www.ias.informatik.tu-darmstadt.de/Member/JanPeters">Prof. Jan Peters' lab</a></p>
@@ -671,7 +677,7 @@ We have a small research group working on <b>AI safety, machine learning, LLMs, 
 <div id="footer">
 <div id="footer-text">
 <!-- Last edited  on July 1<sup>st</sup> 2020  12:34PM (Time Zone: PDT). </br> -->
-© 2025 Shangding Gu.
+© 2026 Shangding Gu.
 </div> <!-- <div id="footer-text"> -->
 </div> <!-- <div id="footer"> -->
 </div> <!-- <div id="footer-container"> -->
