@@ -134,6 +134,16 @@ img.icon {
 .brand-links a:hover {
 	color: #fff;
 }
+.brand-links svg {
+	width: 20px;
+	height: 20px;
+	fill: rgba(255, 255, 255, 0.92);
+	display: inline-block;
+	vertical-align: middle;
+}
+.brand-links a:hover svg {
+	fill: #fff;
+}
 
 #nav-toggle {
 	display: none;             /* hamburger — visible only on small screens */
